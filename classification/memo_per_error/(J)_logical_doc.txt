@@ -1,0 +1,103 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Conceptual error: Conceptual errors occur when the code completely solves a different problem, or when part of the code needed to solve the problem is missing. However, the application of Conceptual Error is refrained in cases where there is no structure in place to receive proper standard input from the user.
+        <Detailed situations>
+            <Error case 1> When the code solves a problem other than the one described in the [Programming Quiz]. </Error case 1>
+            <Error case 2> When part of the code needed to solve the problem is missing, resulting in an incomplete logical flow (However, the occurrence of a Conceptual error is refrained if the code exists but is incorrectly written). </Error case 2>
+        </Detailed situations>    
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program to calculate the sum of all natural numbers from 1 to N.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print the sum of natural numbers from 1 to N.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int N;
+            int sum = 0;
+        
+            cin >> N;
+            
+            for (int i = 1; i < N; ++i) { 
+                sum += i;
+            }
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a for loop to iterate from i = 1 to N-1, adding values to sum. Therefore, the sum of the values from 1 to N-1, not the sum from 1 to N as specified in the [Programming Quiz], is stored in sum. As a result, this is a Loop error due to incorrect use of the loop. A Loop error is not the Conceptual error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program to calculate the sum of all natural numbers from 1 to N.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print the sum of natural numbers from 1 to N.
+
+        [Sample Input]:
+        6
+
+        [Sample Output]:
+        21
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int N;
+            int sum = 0;
+        
+            cin >> N;
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code should add integers from 1 to N according to the intentions of the [Programming Quiz]. However, there is no logic implemented for this. Therefore, this is a Conceptual error because the source code that must be included is completely missing. And the Conceptual error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]: 
+        Write a program to calculate the sum of all natural numbers from 1 to N.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print the sum of natural numbers from 1 to N.
+
+        [Sample Input]:
+        6
+
+        [Sample Output]:
+        21
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            cout << "Hello World" << endl;
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code has an algorithm that is completely different from the intentions of the [Programming Quiz]. Therefore, it is a Conceptual error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 3>
+</Description and examples of one error among the ten types of logical errors>

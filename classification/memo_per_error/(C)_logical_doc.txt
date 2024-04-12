@@ -1,0 +1,122 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Variable error: Variable errors occurs when the primitive variable is not properly created. However, the application of Variable Error is refrained in cases where the standard input is not properly received and values are not stored in variables, and when inappropriate values are entered into variables that are to be output. 
+        <Detailed situations>
+            <Error case 1> When the primitive variable is initialized with an incorrect value. </Error case 1>
+            <Error case 2> When an uninitialized primitive variable is used in calculations, leading to unexpected results. </Error case 2>
+            <Error case 3> When a variable is defined and used with an inappropriate type, causing issues such as overflow. </Error case 3>
+            <Error case 4> When there are other unidentified or unspecified errors related to the use and initialization of primitive variables, beyond the scenarios described in Error cases 1-3. </Error case 4>
+        </Detailed situations>
+    </Description>
+    <Example 1>
+        [Programming Quiz]:
+        Write a program that takes an array of integers and calculates the sum of all elements.
+
+        [Input]:
+        The first line contains an integer N, representing the size of the array. The second line contains N space-separated integers, representing the elements of the array. 
+
+        [Output]: 
+        Print the sum of all elements in the array. 
+
+        [Sample Input]:
+        6
+        3 1 6 8 7 2
+
+        [Sample Output]:
+        27
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int N;
+            
+            cin >> N;
+            
+            int arr[N];
+            int sum = 0;
+
+            for(int i = 0; i < N; ++i) {
+                cin >> arr[0]; 
+                sum += arr[i];
+            }
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code stores the user's input value in the array arr and then adds it to the variable sum. However, when implementing the algorithm, it's written to only store user input in arr[0], so arbitrary values are added when arr[i] is added to sum later. Therefore, an algorithm that is not suitable for the intention of the [Programming Quiz] is created, and this is an Array/String error due to incorrect storage of values in the array. An Array/String error is different from the Variable error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program that takes two integers as input and prints their sum.
+
+        [Input]: 
+        The first line contains an integer A, The second line contains an integer B.
+
+        [Output]: 
+        Print the sum of A and B.
+
+        [Sample Input]:
+        4 5
+
+        [Sample Output]:
+        9
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int num1, num2;
+
+            int sum = num1 + num2; // Use num1, num2 without getting the values inputted
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code does not take integer A and integer B as input as outlined in [Input], but uses the input variables num1 and num2 without initializing them. Therefore, even if the user inputs the [Sample Input] into the standard input stream, the program does not receive these values. Consequently, this is an Input error, and different from the Variable error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]: 
+        Write a program that takes a number of days as input and calculates the equivalent minutes.
+
+        [Input]: 
+        The first line contains an integer representing the number of days. 
+
+        [Output]: 
+        Print the equivalent number of minutes.
+
+        [Sample Input]:
+        3
+
+        [Sample Output]:
+        4320
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int days;
+            cin >> days;
+            
+            int hours; 
+            int minutes = hours * 60;
+
+            cout << minutes << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code attempts to use the 'hour' variable for calculation without initializing or assigning any value to it. Here, the 'hour' variable is not an Input variable created to receive a value as specified in [Input], nor is it an Output variable created for the purpose of producing an output. Therefore, it is a Variable error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 3>
+</Description and examples of one error among the ten types of logical errors>

@@ -1,0 +1,104 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Function error: Function errors occur when the creation and invocation of user-defined functions are not appropriate.
+        <Detailed situations>
+            <Error case 1> When the parameters of a user-defined function are incorrectly set. </Error case 1>
+            <Error case 2> When the return type or variable is incorrectly set when returning a value from a user-defined function. </Error case 2>
+            <Error case 3> When the variables used as arguments are incorrectly set when calling a user-defined function. </Error case 3>
+            <Error case 4> When an incorrect user-defined function is being called. </Error case 4>
+            <Error case 5> When there are other unidentified or unspecified errors related to the setting, calling, or return of user-defined functions, beyond the scenarios described in Error cases 1-4. </Error case 5>
+        </Detailed situations>    
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program that takes an integer as input and determines whether it is a prime number or not.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        If N is a prime number, print "The entered number is prime." If N is not a prime number, print "The entered number is not prime."
+
+        [Sample Input]:
+        12
+
+        [Sample Output]:
+        The entered number is not prime.
+
+        [Submission code]:
+        #include <iostream>
+        using namespace std;
+
+        bool isPrime(int num) {
+            if (num < 2) return false;
+            for (int i = 2; i*i <= num; ++i) {
+                if (num % i != 0) return false;
+            }
+            return true; 
+        }
+
+        int main() {
+            int num;
+            
+            cin >> num;
+            
+            if (isPrime(num)) {
+                cout << "The entered number is prime." << endl;
+            } else {
+                cout << "The entered number is not prime." << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a user-defined function called isPrime() to determine if the user input value stored in num is a prime number. However, the program does not function correctly because the condition in the conditional statement for checking if it's a prime number within the isPrime() function is written as num % i != 0. Therefore, this is a Condition error, and not the Function error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program that takes an integer as input and determines whether it is a prime number or not.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        If N is a prime number, print "The entered number is prime." If N is not a prime number, print "The entered number is not prime."
+
+        [Sample Input]:
+        12
+
+        [Sample Output]:
+        The entered number is not prime.
+
+        [Submission code]:
+        #include <iostream>
+        using namespace std;
+
+        bool isPrime(int num) {
+            if (num < 2) return false;
+            for (int i = 2; i*i <= num; ++i) {
+                if (num % i == 0) return false;
+            }
+            return false; // The program does not operate as intended because the user-defined function always returns false. Therefore, there is a Function error.
+        }
+
+        int main() {
+            int num;
+            
+            cin >> num;
+            
+            if (isPrime(num)) {
+                cout << "The entered number is prime." << endl;
+            } else {
+                cout << "The entered number is not prime." << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a user-defined function, isPrime(), to determine whether the user input value stored in num is a prime number. However, the isPrime() function is designed to always return false. Therefore, contrary to the intentions of the [Programming Quiz], the program will always output "The entered number is not prime". This is a Function error due to the return value issue of the user-defined function isPrime(). And the Function error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+</Description and examples of one error among the ten types of logical errors>

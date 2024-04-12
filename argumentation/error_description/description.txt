@@ -1,0 +1,78 @@
+<Description>
+(A): (A) errors occur when the program fails to handle standard input properly. 
+<(A) Error's Detailed situations>
+    <Error case 1> When it does not receive the value described in [Input] as standard input. (e.g., trying to use hard-coded values) </Error case 1>
+    <Error case 2> When it only receives a part of the values described in [Input] as standard input. (e.g., trying to receive only one line when multiple lines of input are given) </Error case 2>
+    <Error case 3> When it receives more than the number of values described in [Input] as standard input. (e.g., trying to receive multiple lines when one line of input is given) </Error case 3>
+    <Error case 4> When the input part that is written does not match the description in [Input], other than 1-3. </Error case 4>
+    <Error case 5> When the type designation of the Input Variable, which receives and stores standard input, is incorrect. </Error case 5>
+    <Error case 6> When there are other unidentified or unspecified errors related to handling standard inputs, beyond the scenarios outlined in Error cases 1-5. </Error case 6>
+</(A) Error's Detailed situations>
+(B): (B) errors occur when the program fails to properly construct the format of the standard output. Therefore, if the possible output formats are described in [Output], the occurrence of a (B) error is refrained even if an incorrect output results from a flawed algorithm. Additionally, the occurrence of a (B) error is also refrained when an incorrect format is output due to factors such as the number of repetitions in a loop.
+<(B) Error's Detailed situations>
+    <Error case 1> When the output does not match the number of outputs described in [Output]. </Error case 1>
+    <Error case 2> When the output does not precisely match the format described in [Output]. (e.g. "No" ≠ "no", "Apple" ≠ "apple") </Error case 2>
+    <Error case 3> When the phrase not described in the [Output] is outputted. (e.g., phrases to induce user input, etc.) </Error case 3>
+    <Error case 4> When the type of the variable storing the value found for the standard output is incorrect. </Error case 4>
+    <Error case 5> When there are other unidentified or unspecified errors related to the standard output, beyond the scenarios described in Error cases 1-4. </Error case 5>
+</(B) Error's Detailed situations>
+(C): (C) error occurs when the primitive variable is not properly created. However, the application of (C) Error is refrained in cases where the standard input is not properly received and values are not stored in variables, and when inappropriate values are entered into variables that are to be output. 
+<(C) Error's Detailed situations>
+    <Error case 1> When the primitive variable is initialized with an incorrect value. </Error case 1>
+    <Error case 2> When an uninitialized primitive variable is used in calculations, leading to unexpected results. </Error case 2>
+    <Error case 3> When a variable is defined and used with an inappropriate type, causing issues such as overflow. </Error case 3>
+    <Error case 4> When there are other unidentified or unspecified errors related to the use and initialization of primitive variables, beyond the scenarios described in Error cases 1-3. </Error case 4>
+</(C) Error's Detailed situations>
+(D): (D) errors occur when operators and functions are not used properly. However, the application of (D) errors is refrained in a few scenarios: when using the assignment operator for variable initialization, in user-defined functions, in the declaration part of conditional statements, and in the declaration part of loop statements.
+<(D) Error's Detailed situations>
+    <Error case 1> When an incorrect operator is used, resulting in an incorrect value. </Error case 1>
+    <Error case 2> When the operator precedence is misunderstood, resulting in an incorrect value. </Error case 2>
+    <Error case 3> When an incorrect value is assigned to a variable. </Error case 3>
+    <Error case 4> When a function, other than user-defined functions, is used incorrectly. </Error case 4>
+    <Error case 5> When there are other unidentified or unspecified errors related to the use of operators and functions, beyond the scenarios described in Error cases 1-4. </Error case 5>
+</(D) Error's Detailed situations>
+(E): (E) errors occur when the declaration part of a conditional statement('if', 'switch', etc.) is not properly written.
+<(E) Error's Detailed situations>
+    <Error case 1> When an incorrect operator is used in the declaration part of a conditional statement. </Error case 1>
+    <Error case 2> When an incorrect function is used in the declaration part of a conditional statement. </Error case 2>
+    <Error case 3> When an incorrect variable is used in the declaration part of a conditional statement. </Error case 3>
+    <Error case 4> When there are other unidentified or unspecified errors in the declaration part of a conditional statement, beyond the scenarios described in Error cases 1-3. </Error case 4>
+</(E) Error's Detailed situations>
+(F): (F) errors occur when the branching in the source code is not appropriate. However, the application of errors is refrained for the content written in the declaration part of the conditional statement and the declaration part of the loop statement('for', 'while', etc.).
+<(F) Error's Detailed situations>
+    <Error case 1> When a conditional statement that should be written as if-else if-else is written as if-if-if, leading to incorrect behavior. </Error case 1>
+    <Error case 2> When incorrect behavior occurs in a switch-case statement because a break is not written inside a case or default is not used. </Error case 2>
+    <Error case 3> When incorrect behavior occurs in a loop because break or continue is not used when needed. </Error case 3>
+    <Error case 4> When the program does not terminate when it should. </Error case 4>
+    <Error case 5> When there are other unidentified or unspecified errors in the control flow of the program, beyond the scenarios described in Error cases 1-4. </Error case 5>
+</(F) Error's Detailed situations>
+(G): (G) errors occur when the declaration part of a loop statement('for', 'while', etc.) is not properly written.
+<(G) Error's Detailed situations>
+    <Error case 1> When initialization or assignment is incorrect in the declaration part of a loop statement. </Error case 1>
+    <Error case 2> When the condition is wrongly written in the declaration part of a loop statement. </Error case 2>
+    <Error case 3> When the increment or decrement expression is incorrect in the declaration part of a loop statement. </Error case 3>
+    <Error case 4> When an infinite loop occurs due to cases 1-3 (However, an infinite loop due to the absence of a necessary break is a Branching error). </Error case 4>
+    <Error case 5> When an Off by 1 problem occurs due to cases 1-3. </Error case 5>
+    <Error case 6> When there are other unidentified or unspecified errors in the declaration or operation of a loop statement, beyond the scenarios described in Error cases 1-5. </Error case 6>
+</(G) Error's Detailed situations>    
+(H): (H) errors occur in the code when the array (or string) is not used appropriately.
+<(H) Error's Detailed situations>
+    <Error case 1> When an array (or string) is initialized with an incorrect value during its creation. </Error case 1>
+    <Error case 2> When unallocated memory is referenced (memory out of bound). </Error case 2>
+    <Error case 3> When an index where no value is stored within the allocated memory is referenced. </Error case 3>
+    <Error case 4> When there are other unidentified or unspecified errors in the creation, initialization, or referencing of an array (or string), beyond the scenarios described in Error cases 1-3. </Error case 4>
+</(H) Error's Detailed situations>    
+(I): (I) errors occur when the creation and invocation of user-defined functions are not appropriate.
+<(I) Error's Detailed situations>
+    <Error case 1> When the parameters of a user-defined function are incorrectly set. </Error case 1>
+    <Error case 2> When the return type or variable is incorrectly set when returning a value from a user-defined function. </Error case 2>
+    <Error case 3> When the variables used as arguments are incorrectly set when calling a user-defined function. </Error case 3>
+    <Error case 4> When an incorrect user-defined function is being called. </Error case 4>
+    <Error case 5> When there are other unidentified or unspecified errors related to the setting, calling, or return of user-defined functions, beyond the scenarios described in Error cases 1-4. </Error case 5>
+</(I) Error's Detailed situations>    
+(J): (J) errors occur when the code completely solves a different problem, or when part of the code needed to solve the problem is missing. However, the application of (J) Error is refrained in cases where there is no structure in place to receive proper standard input from the user.
+<(J) Error's Detailed situations>
+    <Error case 1> When the code solves a problem other than the one described in the [Programming Quiz]. </Error case 1>
+    <Error case 2> When part of the code needed to solve the problem is missing, resulting in an incomplete logical flow (However, the occurrence of a (J) error is refrained if the code exists but is incorrectly written). </Error case 2>
+</(J) Error's Detailed situations>    
+</Description>

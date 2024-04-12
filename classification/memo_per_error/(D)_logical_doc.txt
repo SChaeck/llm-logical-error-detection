@@ -1,0 +1,86 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Computation error: Computation errors occur when operators and functions are not used properly. However, the application of Computation errors is refrained in a few scenarios: when using the assignment operator for variable initialization, in user-defined functions, in the declaration part of conditional statements, and in the declaration part of loop statements.
+        <Detailed situations>
+            <Error case 1> When an incorrect operator is used, resulting in an incorrect value. </Error case 1>
+            <Error case 2> When the operator precedence is misunderstood, resulting in an incorrect value. </Error case 2>
+            <Error case 3> When an incorrect value is assigned to a variable. </Error case 3>
+            <Error case 4> When a function, other than user-defined functions, is used incorrectly. </Error case 4>
+            <Error case 5> When there are other unidentified or unspecified errors related to the use of operators and functions, beyond the scenarios described in Error cases 1-4. </Error case 5>
+        </Detailed situations>
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program that takes an integer as input and determines whether it is even or odd.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        If N is even, print "The entered number is even." If N is odd, print "The entered number is odd."
+
+        [Sample Input]:
+        3
+
+        [Sample Output]:
+        The entered number is odd.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int num;
+            
+            cin >> num;
+            
+            if (num / 2 == 0) { 
+                cout << "The entered number is even." << endl;
+            } else {
+                cout << "The entered number is odd." << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code checks if the value of num divided by 2 is 0 within the if statement. However, the intention of the [Programming Quiz] was to discern whether the user input stored in num is even or odd, so it should check if the remainder when divided by 2 is 0. Therefore, it's a Condition error since the condition statement is incorrect. A Condition error is different from the Computation error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program that takes two integers as input and prints their sum.
+
+        [Input]: 
+        The first line contains an integer A, The second line contains an integer B.
+
+        [Output]: 
+        Print the sum of A and B.
+
+        [Sample Input]:
+        5 3
+
+        [Sample Output]:
+        8
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int num1, num2;
+        
+            cin >> num1;
+            cin >> num2;
+            
+            int sum = num1 - num2; 
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code subtracts the value of num2 from num1 and stores it in the variable sum. This is a misuse of the operator, which prevents the algorithm from functioning as intended in the [Programming Quiz]. Therefore, it is a Computation error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+</Description and examples of one error among the ten types of logical errors>

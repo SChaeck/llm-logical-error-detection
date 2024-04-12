@@ -1,0 +1,158 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Output error: Output errors occur when the program fails to properly construct the format of the standard output. Therefore, if the possible output formats are described in [Output], the occurrence of a Output error is refrained even if an incorrect output results from a flawed algorithm. Additionally, the occurrence of a Output error is also refrained when an incorrect format is output due to factors such as the number of repetitions in a loop.
+        <Detailed situations>
+            <Error case 1> When the output does not match the number of outputs described in [Output]. </Error case 1>
+            <Error case 2> When the output does not precisely match the format described in [Output]. (e.g. "No" ≠ "no", "Apple" ≠ "apple") </Error case 2>
+            <Error case 3> When the phrase not described in the [Output] is outputted. (e.g., phrases to induce user input, etc.) </Error case 3>
+            <Error case 4> When the type of the variable storing the value found for the standard output is incorrect. </Error case 4>
+            <Error case 5> When there are other unidentified or unspecified errors related to the standard output, beyond the scenarios described in Error cases 1-4. </Error case 5>
+        </Detailed situations>
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program which prints small/large/equal relation of given two integers a and b.
+
+        [Input]: 
+        Two integers a and b separated by a single space are given in a line.
+
+        [Output]: 
+        For given two integers a and b, print a < b if a is less than b, a > b if a is greater than b, and a == b if a equals to b.
+
+        [Sample Input]:
+        3 2
+
+        [Sample Output]:
+        a > b
+
+        [Submission code]: 
+        #include<iostream>
+        #include<string>
+        using namespace std;
+        int main()
+        {
+            int x,y;
+            cin >> x >> y;
+
+            if(x > y)   cout << "x > y" << endl; 
+            else if(x < y)   cout << "x < y" << endl; 
+            else    cout << "x == y" << endl; 
+
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code does receive the input as required in [Input], and the algorithm is written according to the intention of the [Programming Quiz]. However, while [Output] specifies to print the relationship between the two integers using a and b, the code uses x and y to print the relationship. Therefore, this is a problem related to the output format, hence it's an Output error. And the Output error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program which prints small/large/equal relation of given two integers a and b.
+
+        [Input]: 
+        Two integers a and b separated by a single space are given in a line.
+
+        [Output]: 
+        For given two integers a and b, print a < b if a is less than b, a > b if a is greater than b, and a == b if a equals to b.
+
+        [Sample Input]:
+        3 2
+
+        [Sample Output]:
+        a > b
+
+        [Submission code]: 
+        #include<iostream>
+        #include<string>
+        using namespace std;
+        int main()
+        {
+            int x,y;
+            string s;
+            cin >> x >> y;
+
+            if(x > y)   cout << "a > b" << endl;
+            else if(x < y)   cout << "a > b" << endl;
+            else    cout << "a == b" << endl;
+
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code does receive the input as required in [Input], and the algorithm is written according to the intention of the [Programming Quiz]. However, while [Output] specifies to print "a < b" when a is less than b, the actual code prints "a > b". This is an Output error because the print statement does not match the condition of the situation. And the Output error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]: 
+        Write a program that takes two integers as input and prints their sum.
+
+        [Input]: 
+        The first line contains an integer A, The second line contains an integer B.
+
+        [Output]: 
+        Print the sum of A and B.
+
+        [Sample Input]:
+        4 5
+
+        [Sample Output]:
+        9
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int num1, num2;
+
+            num1 = 2; // hard-coded value
+            num2 = 3;  // hard-coded value
+
+            int sum = num1 + num2;
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code does not take integer A and integer B as input as described in [Input], but hardcodes the values to num1 and num2 instead. Therefore, even if the user inputs the [Sample Input] into the standard input stream, the program does not receive these values. Thus, this is an Input error, and different from the Output error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 3>
+    <Example 4>
+        [Programming Quiz]: 
+        Write a program which prints small/large/equal relation of given two integers a and b.
+
+        [Input]: 
+        Two integers a and b separated by a single space are given in a line.
+
+        [Output]: 
+        For given two integers a and b, print a < b if a is less than b, a > b if a is greater than b, and a == b if a equals to b.
+
+        [Sample Input]:
+        3 2
+
+        [Sample Output]:
+        a > b
+
+        [Submission code]: 
+        #include<iostream>
+        #include<string>
+        using namespace std;
+        int main()
+        {
+            int x,y;
+            string s;
+            cin >> x >> y;
+
+            if(x > y)   cout << "a > b" << endl;
+            else if(x < y)   cout << "a < b" << endl;
+            else    cout << "a = b" << endl;
+
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code does take the input as specified in [Input], and the algorithm is designed according to the purpose of the [Programming Quiz]. However, while [Output] specifies to print "a == b" when a is equal to b, the actual code prints "a = b". This is an Output error because the print statement does not match the condition of the situation. And the Output error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 4>
+</Description and examples of one error among the ten types of logical errors>

@@ -1,0 +1,1022 @@
+﻿quiz_name,quiz,quiz_input,quiz_output,sample_input,sample_output
+ITP1_1_A,"
+Welcome to Online Judge!
+
+Write a program which prints ""Hello World"" to standard output.
+","
+There is no input for this problem.
+","
+  Print ""Hello World"" in a line.
+
+  Do not forget to add a new line at the end. Please note that missing required white spaces or line breaks, or printing extra white spaces or line breaks, will result in a 'Presentation Error' and an incorrect answer.
+","
+No input
+","
+Hello World
+"
+ITP1_1_B,"
+Write a program which calculates the cube of a given integer x.
+","
+An integer x is given in a line.
+","
+Print the cube of x in a line.
+","
+3
+","
+27
+"
+ITP1_1_C,"
+Write a program which calculates the area and perimeter of a given rectangle.
+","
+  The length a and breadth b of the rectangle are given in a line separated by a single space.
+","
+Print the area and perimeter of the rectangle in a line. The two integers should be separated by a single space.
+","
+3 5
+","
+15 16
+"
+ITP1_1_D,"
+Write a program which reads an integer $S$ [second] and converts it to $h:m:s$ where $h$, $m$, $s$ denote hours, minutes (less than 60) and seconds (less than 60) respectively.
+","
+An integer $S$ is given in a line.
+","
+Print $h$, $m$ and $s$ separated by ':'. You do not need to put '0' for a value, which consists of a digit.
+","
+46979
+","
+13:2:59
+"
+ITP1_2_A,"
+Write a program which prints small/large/equal relation of given two integers a and b.
+","
+  Two integers a and b separated by a single space are given in a line.
+","
+For given two integers a and b, print
+a < b
+
+  if a is less than b,
+a > b
+
+  if a is greater than b, and
+a == b
+
+  if a equals to b.
+","
+1 2
+","
+a < b
+"
+ITP1_2_B,"
+  Write a program which reads three integers a, b and c, and prints ""Yes"" if a < b < c, otherwise ""No"".
+","
+  Three integers a, b and c separated by a single space are given in a line.
+","
+  Print ""Yes"" or ""No"" in a line.
+","
+1 3 8
+","
+Yes
+"
+ITP1_2_C,"
+  Write a program which reads three integers, and prints them in ascending order.
+","
+  Three integers separated by a single space are given in a line.
+","
+  Print the given integers in ascending order in a line. Put a single space between two integers.
+","
+3 8 1
+","
+1 3 8
+"
+ITP1_2_D,"
+  Write a program which reads a rectangle and a circle, and determines whether the circle is arranged inside the rectangle. As shown in the following figures, the upper right coordinate $(W, H)$ of the rectangle and the central coordinate $(x, y)$ and radius $r$ of the circle are given.
+
+
+
+
+","
+  Five integers $W$, $H$, $x$, $y$ and $r$ separated by a single space are given in a line.
+","
+  Print ""Yes"" if the circle is placed inside the rectangle, otherwise ""No"" in a line.
+","
+5 4 2 2 1
+","
+Yes
+"
+ITP1_3_A,"
+Write a program which prints 1000 ""Hello World"".
+","
+ There is no input for this problem.
+","
+The output consists of 1000 lines. Print ""Hello World"" in each line.
+","
+No input
+","
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+Hello World
+.
+.
+.
+.
+.
+.
+Hello World
+"
+ITP1_3_B,"
+In the online judge system, a judge file may include multiple datasets to check whether the submitted program outputs a correct answer for each test case. This task is to practice solving a problem with multiple datasets.
+
+Write a program which reads an integer x and print it as is. Note that multiple datasets are given for this problem.
+","
+The input consists of multiple datasets. Each dataset consists of an integer x in a line.
+
+The input ends with an integer 0. You program should not process (print) for this terminal symbol.
+","
+For each dataset, print x in the following format:
+Case i: x
+
+where i is the case number which starts with 1. Put a single space between ""Case"" and i. Also, put a single space between ':' and x.","
+3
+5
+11
+7
+8
+19
+0
+","
+Case 1: 3
+Case 2: 5
+Case 3: 11
+Case 4: 7
+Case 5: 8
+Case 6: 19
+"
+ITP1_3_C,"
+  Write a program which reads two integers x and y, and prints them in ascending order. 
+","
+The input consists of multiple datasets. Each dataset consists of two integers x and y separated by a single space.
+
+The input ends with two 0 (when both x and y are zero). Your program should not process for these terminal symbols.
+  ","
+For each dataset, print x and y in ascending order in a line. Put a single space between x and y.
+","
+3 2
+2 2
+5 3
+0 0
+","
+2 3
+2 2
+3 5
+"
+ITP1_3_D,"
+  Write a program which reads three integers a, b and c, and prints the number of divisors of c between a and b.
+","
+  Three integers a, b and c are given in a line separated by a single space.
+","
+Print the number of divisors in a line.
+","
+5 14 80
+","
+3
+"
+ITP1_4_A,"
+Write a program which reads two integers a and b, and calculates the following values:
+
+a ÷ b:  d (in integer)
+remainder of a ÷ b:  r (in integer)
+a ÷ b:  f (in real number)
+a ÷ b:  d (in integer)abdremainder of a ÷ b:  r (in integer)abra ÷ b:  f (in real number)abf","
+Two integers a and b are given in a line.
+","
+Print d, r and f separated by a space in a line. For f, the output should not contain an absolute error greater than 10-5.
+","
+3 2
+","
+1 1 1.50000
+"
+ITP1_4_B,"
+Write a program which calculates the area and circumference of a circle for given radius r.
+","
+A real number r is given.
+","
+Print the area and circumference of the circle in a line. Put a single space between them. The output should not contain an absolute error greater than 10-5.
+","
+2
+","
+12.566371 12.566371
+"
+ITP1_4_C,"
+Write a program which reads two integers a, b and an operator op, and then prints the value of a op b.
+abopaopb
+The operator op is '+', '-', '*' or '/' (sum, difference, product or quotient). The division should truncate any fractional part.
+","
+The input consists of multiple datasets. Each dataset is given in the following format.
+
+a op b
+aopb
+The input ends with a dataset where op = '?'. Your program should not process for this dataset.
+","
+For each dataset, print the value in a line.
+","
+1 + 2
+56 - 18
+13 * 2
+100 / 10
+27 + 81
+0 ? 0
+","
+3
+38
+26
+10
+108
+"
+ITP1_4_D,"
+Write a program which reads a sequence of $n$ integers $a_i (i = 1, 2, ... n)$, and prints the minimum value, maximum value and sum of the sequence.
+","
+  In the first line, an integer $n$ is given. In the next line, $n$ integers $a_i$ are given in a line.
+","
+  Print the minimum value, maximum value and sum in a line. Put a single space between the values.
+","
+5
+10 1 5 4 17
+","
+1 17 37
+"
+ITP1_5_A,"
+  Draw a rectangle which has a height of H cm and a width of W cm. Draw a 1-cm square by single '#'.
+","
+The input consists of multiple datasets. Each dataset consists of two integers H and W separated by a single space.
+HW
+  The input ends with two 0 (when both H and W are zero). 
+","
+For each dataset, print the rectangle made of H × W '#'.
+HW
+  Print a blank line after each dataset.
+","
+3 4
+5 6
+2 2
+0 0
+","
+####
+####
+####
+
+######
+######
+######
+######
+######
+
+##
+##
+
+"
+ITP1_5_B,"
+  Draw a frame which has a height of H cm and a width of W cm. For example, the following figure shows a frame which has a height of 6 cm and a width of 10 cm.
+
+##########
+#........#
+#........#
+#........#
+#........#
+##########
+","
+The input consists of multiple datasets. Each dataset consists of two integers H and W separated by a single space.
+HW
+  The input ends with two 0 (when both H and W are zero). 
+","
+For each dataset, print the frame made of '#' and '.'.
+
+  Print a blank line after each dataset.
+","
+3 4
+5 6
+3 3
+0 0
+","
+####
+#..#
+####
+
+######
+#....#
+#....#
+#....#
+######
+
+###
+#.#
+###
+
+"
+ITP1_5_C,"
+  Draw a chessboard which has a height of H cm and a width of W cm. For example, the following figure shows a chessboard which has a height of 6 cm and a width of 10 cm.
+
+#.#.#.#.#.
+.#.#.#.#.#
+#.#.#.#.#.
+.#.#.#.#.#
+#.#.#.#.#.
+.#.#.#.#.#
+
+Note that the top left corner should be drawn by '#'.
+","
+The input consists of multiple datasets. Each dataset consists of two integers H and W separated by a single space.
+HW
+  The input ends with two 0 (when both H and W are zero). 
+","
+For each dataset, print the chessboard made of '#' and '.'.
+
+  Print a blank line after each dataset.
+","
+3 4
+5 6
+3 3
+2 2
+1 1
+0 0
+","
+#.#.
+.#.#
+#.#.
+
+#.#.#.
+.#.#.#
+#.#.#.
+.#.#.#
+#.#.#.
+
+#.#
+.#.
+#.#
+
+#.
+.#
+
+#
+
+"
+ITP1_5_D,"
+In programming languages like C/C++, a goto statement provides an unconditional jump from the ""goto"" to a labeled statement. For example, a statement ""goto CHECK_NUM;"" is executed, control of the program jumps to CHECK_NUM. Using these constructs, you can implement, for example, loops.
+
+Note that use of goto statement is highly discouraged, because it is difficult to trace the control flow of a program which includes goto.
+
+Write a program which does precisely the same thing as the following program (this example is wrtten in C++). Let's try to write the program without goto statements.
+
+void call(int n){
+  int i = 1;
+ CHECK_NUM:
+  int x = i;
+  if ( x % 3 == 0 ){
+    cout << "" "" << i;
+    goto END_CHECK_NUM;
+  }
+ INCLUDE3:
+  if ( x % 10 == 3 ){
+    cout << "" "" << i;
+    goto END_CHECK_NUM;
+  }
+  x /= 10;
+  if ( x ) goto INCLUDE3;
+ END_CHECK_NUM:
+  if ( ++i <= n ) goto CHECK_NUM;
+
+  cout << endl;
+}
+","
+An integer n is given in a line.
+","
+Print the output result of the above program for given integer n.
+","
+30
+","
+ 3 6 9 12 13 15 18 21 23 24 27 30
+"
+ITP1_6_A,"
+  Write a program which reads a sequence and prints it in the reverse order.
+","
+The input is given in the following format:
+
+n
+a1 a2 . . . an
+na1a2ann
+n is the size of the sequence and ai is the ith element of the sequence.
+naiii","
+  Print the reversed sequence in a line. Print a single space character between adjacent elements (Note that your program should not put a space character after the last element).
+","
+5
+1 2 3 4 5
+","
+5 4 3 2 1
+"
+ITP1_6_B,"
+  Taro is going to play a card game. However, now he has only n cards, even though there should be 52 cards (he has no Jokers).
+
+The 52 cards include 13 ranks of each of the four suits: spade, heart, club and diamond.
+","
+  In the first line, the number of cards n (n ≤ 52) is given.
+nn
+  In the following n lines, data of the n cards are given. Each card is given by a pair of a character and an integer which represent its suit and rank respectively. A suit is represented by 'S', 'H', 'C' and 'D' for spades, hearts, clubs and diamonds respectively. A rank is represented by an integer from 1 to 13.
+","
+  Print the missing cards. The same as the input format, each card should be printed with a character and an integer separated by a space character in a line.
+ Arrange the missing cards in the following priorities:
+
+Print cards of spades, hearts, clubs and diamonds in this order.
+If the suits are equal, print cards with lower ranks first.
+Print cards of spades, hearts, clubs and diamonds in this order.If the suits are equal, print cards with lower ranks first.","
+47
+S 10
+S 11
+S 12
+S 13
+H 1
+H 2
+S 6
+S 7
+S 8
+S 9
+H 6
+H 8
+H 9
+H 10
+H 11
+H 4
+H 5
+S 2
+S 3
+S 4
+S 5
+H 12
+H 13
+C 1
+C 2
+D 1
+D 2
+D 3
+D 4
+D 5
+D 6
+D 7
+C 3
+C 4
+C 5
+C 6
+C 7
+C 8
+C 9
+C 10
+C 11
+C 13
+D 9
+D 10
+D 11
+D 12
+D 13
+","
+S 1
+H 3
+H 7
+C 12
+D 8
+"
+ITP1_6_C,"
+You manage 4 buildings, each of which has 3 floors, each of which consists of 10 rooms. Write a program which reads a sequence of tenant/leaver notices, and reports the number of tenants for each room.
+
+  For each notice, you are given four integers b, f, r and v which represent that v persons entered to room r of fth floor at building b. If v is negative, it means that −v persons left.
+
+Assume that initially no person lives in the building. 
+","
+  In the first line, the number of notices n is given. In the following n lines, a set of four integers b, f, r and v which represents ith notice is given in a line. 
+","
+For each building, print the information of 1st, 2nd and 3rd floor in this order. For each floor information, print the number of tenants of 1st, 2nd, .. and 10th room in this order. Print a single space character before the number of tenants. Print ""####################"" (20 '#') between buildings.
+","
+3
+1 1 3 8
+3 2 2 7
+4 3 8 1
+","
+ 0 0 8 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+####################
+ 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+####################
+ 0 0 0 0 0 0 0 0 0 0
+ 0 7 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+####################
+ 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 0 0 0
+ 0 0 0 0 0 0 0 1 0 0
+"
+ITP1_6_D,"
+Write a program which reads a $ n \times m$ matrix $A$  and a $m \times 1$ vector $b$, and prints their product $Ab$.
+
+  A column vector with m elements is represented by the following equation.
+
+  A $n \times m$ matrix with $m$ column vectors, each of which consists of $n$ elements, is represented by the following equation.
+
+  $i$-th element of a $m \times 1$ column vector $b$ is represented by $b_i$ ($i = 1, 2, ..., m$), and the element in $i$-th row and $j$-th column of a matrix $A$ is represented by $a_{ij}$ ($i = 1, 2, ..., n,$  $j = 1, 2, ..., m$).
+
+The product of a $n \times m$ matrix $A$ and a $m \times 1$ column vector $b$ is a $n \times 1$ column vector $c$, and $c_i$ is obtained by the following formula:
+","
+  In the first line, two integers $n$ and $m$ are given. In the following $n$ lines, $a_{ij}$ are given separated by a single space character. In the next $m$ lines, $b_i$ is given in a line.
+","
+  The output consists of $n$ lines. Print $c_i$ in a line.
+","
+3 4
+1 2 0 1
+0 3 0 1
+4 1 1 0
+1
+2
+3
+0
+","
+5
+6
+9
+"
+ITP1_7_A,"
+  Write a program which reads a list of student test scores and evaluates the performance for each student.
+
+  The test scores for a student include scores of the midterm examination m (out of 50), the final examination f (out of 50) and the makeup examination r (out of 100). If the student does not take the examination, the score is indicated by -1.
+  The final performance of a student is evaluated by the following procedure:
+
+If the student does not take the midterm or final examination, the student's grade shall be F.
+If the total score of the midterm and final examination is greater than or equal to 80, the student's grade shall be A.
+If the total score of the midterm and final examination is greater than or equal to 65 and less than 80, the student's grade shall be B.
+If the total score of the midterm and final examination is greater than or equal to 50 and less than 65, the student's grade shall be C.
+If the total score of the midterm and final examination is greater than or equal to 30 and less than 50, the student's grade shall be D. However, if the score of the makeup examination is greater than or equal to 50, the grade shall be C.
+If the total score of the midterm and final examination is less than 30, the student's grade shall be F.
+If the student does not take the midterm or final examination, the student's grade shall be F.If the total score of the midterm and final examination is greater than or equal to 80, the student's grade shall be A.If the total score of the midterm and final examination is greater than or equal to 65 and less than 80, the student's grade shall be B.If the total score of the midterm and final examination is greater than or equal to 50 and less than 65, the student's grade shall be C.If the total score of the midterm and final examination is greater than or equal to 30 and less than 50, the student's grade shall be D. However, if the score of the makeup examination is greater than or equal to 50, the grade shall be C.If the total score of the midterm and final examination is less than 30, the student's grade shall be F.","
+  The input consists of multiple datasets. For each dataset, three integers m, f and r are given in a line.
+
+  The input ends with three -1 for m, f and r respectively. Your program should not process for the terminal symbols.
+
+The number of datasets (the number of students) does not exceed 50.
+","
+  For each dataset, print the grade (A, B, C, D or F) in a line.
+","
+40 42 -1
+20 30 -1
+0 2 -1
+-1 -1 -1
+","
+A
+C
+F
+"
+ITP1_7_B,"
+  Write a program which identifies the number of combinations of three integers which satisfy the following conditions:
+
+You should select three distinct integers from 1 to n.
+A total sum of the three integers is x.
+You should select three distinct integers from 1 to n.nA total sum of the three integers is x.
+  For example, there are two combinations for n = 5 and x = 9.
+
+1 + 3 + 5 = 9
+2 + 3 + 4 = 9
+1 + 3 + 5 = 92 + 3 + 4 = 9","
+  The input consists of multiple datasets. For each dataset, two integers n and x are given in a line.
+
+  The input ends with two zeros for n and x respectively. Your program should not process for these terminal symbols.
+","
+  For each dataset, print the number of combinations in a line.
+","
+5 9
+0 0
+","
+2
+"
+ITP1_7_C,"
+  Your task is to perform a simple table calculation.
+
+  Write a program which reads the number of rows r, columns c and a table of r × c elements, and prints a new table, which includes the total sum for each row and column. 
+","
+  In the first line, two integers r and c are given. Next, the table is given by r lines, each of which consists of c integers separated by space characters.
+","
+  Print the new table of (r+1) × (c+1) elements. Put a single space character between adjacent elements. For each row, print the sum of it's elements in the last column. For each column, print the sum of it's elements in the last row. Print the total sum of the elements at the bottom right corner of the table.
+","
+4 5
+1 1 3 4 5
+2 2 2 4 5
+3 3 0 1 1
+2 3 4 4 6
+","
+1 1 3 4 5 14
+2 2 2 4 5 15
+3 3 0 1 1 8
+2 3 4 4 6 19
+8 9 9 13 17 56
+"
+ITP1_7_D,"
+Write a program which reads a $n \times m$ matrix $A$ and a $m \times l$ matrix $B$, and prints their product, a $n \times l$ matrix $C$. An element of matrix $C$ is obtained by the following formula:
+
+  where $a_{ij}$, $b_{ij}$ and $c_{ij}$ are elements of $A$, $B$ and $C$ respectively.
+","
+  In the first line, three integers $n$, $m$ and $l$ are given separated by space characters
+
+  In the following lines, the $n \times m$ matrix $A$ and the $m \times l$ matrix $B$ are given.
+","
+  Print elements of the $n \times l$ matrix $C$ ($c_{ij}$). Print a single space character between adjacent elements.
+","
+3 2 3
+1 2
+0 3
+4 5
+1 2 1
+0 3 2
+","
+1 8 5
+0 9 6
+4 23 14
+"
+ITP1_8_A,"
+  Write a program which converts uppercase/lowercase letters to lowercase/uppercase for a given string.
+","
+  A string is given in a line.
+","
+  Print the converted string in a line. Note that you do not need to convert any characters other than alphabetical letters.
+","
+fAIR, LATER, OCCASIONALLY CLOUDY.
+","
+Fair, later, occasionally cloudy.
+"
+ITP1_8_B,"
+  Write a program which reads an integer and prints sum of its digits.
+","
+  The input consists of multiple datasets. For each dataset, an integer x is given in a line. The number of digits in x does not exceed 1000.
+
+The input ends with a line including single zero. Your program should not process for this terminal symbol.
+","
+  For each dataset, print the sum of digits in x.
+","
+123
+55
+1000
+0
+","
+6
+10
+1
+"
+ITP1_8_C,"
+  Write a program which counts and reports the number of each alphabetical letter. Ignore the case of characters.
+","
+
+  Multiple strings are given. Input may be given in multiple lines.
+","
+
+  Output the number of each alphabet in the given input in the format shown below
+
+a : The number of 'a'
+b : The number of 'b'
+c : The number of 'c'
+  .
+  .
+z : The number of 'z'
+The number of 'a'The number of 'b'The number of 'c'The number of 'z'","ABCD E F Z
+x
+y
+z","a : 1
+b : 1
+c : 1
+d : 1
+e : 1
+f : 1
+g : 0
+h : 0
+i : 0
+j : 0
+k : 0
+l : 0
+m : 0
+n : 0
+o : 0
+p : 0
+q : 0
+r : 0
+s : 0
+t : 0
+u : 0
+v : 0
+w : 0
+x : 1
+y : 1
+z : 2"
+ITP1_8_D,"
+  Write a program which finds a pattern $p$ in a ring shaped text $s$.
+
+
+","
+  In the first line, the text $s$ is given.
+  In the second line, the pattern $p$ is given.
+","
+  If $p$ is in $s$, print Yes in a line, otherwise No.
+","
+vanceknowledgetoad
+advance
+","
+Yes
+"
+ITP1_9_A,"
+Write a program which reads a word W and a text T, and prints the number of word W which appears in text T
+
+T consists of string Ti separated by space characters and newlines. Count the number of Ti which equals to W. The word and text are case insensitive.
+","
+  In the first line, the word W is given. In the following lines, the text T is given separated by space characters and newlines.
+
+""END_OF_TEXT"" indicates the end of the text.
+END_OF_TEXT","
+  Print the number of W in the text.
+","
+computer
+Nurtures computer scientists and highly skilled computer engineers
+who will create and exploit knowledge for the new era
+Provides an outstanding computer environment
+END_OF_TEXT
+","
+3
+"
+ITP1_9_B,"
+  Your task is to shuffle a deck of n cards, each of which is marked by a alphabetical letter.
+
+  A single shuffle action takes out h cards from the bottom of the deck and moves them to the top of the deck.
+
+  The deck of cards is represented by a string as follows.
+
+abcdeefab
+
+  The first character and the last character correspond to the card located at the bottom of the deck and the card on the top of the deck respectively.
+
+  For example, a shuffle with h = 4 to the above deck, moves the first 4 characters ""abcd"" to the end of the remaining characters ""eefab"", and generates the following deck:
+
+eefababcd
+
+  You can repeat such shuffle operations.
+
+  Write a program which reads a deck (a string) and a sequence of h, and prints the final state (a string). 
+h","
+  The input consists of multiple datasets. Each dataset is given in the following format:
+
+A string which represents a deck
+The number of shuffle m
+h1
+h2
+  .
+  .
+hm
+
+  The input ends with a single character '-' for the string.
+","
+  For each dataset, print a string which represents the final state in a line.
+","
+aabc
+3
+1
+2
+1
+vwxyz
+2
+3
+4
+-
+","
+aabc
+xyzvw
+"
+ITP1_9_C,"
+  Taro and Hanako are playing card games. They have n cards each, and they compete n turns. At each turn Taro and Hanako respectively puts out a card.
+  The name of the animal consisting of alphabetical letters is written on each card, and the bigger one in lexicographical order becomes the winner of that turn. The winner obtains 3 points. In the case of a draw, they obtain 1 point each.
+
+  Write a program which reads a sequence of cards Taro and Hanako have and reports the final scores of the game.
+","
+  In the first line, the number of cards n is given. In the following n lines, the cards for n turns are given respectively. For each line, the first string represents the Taro's card and the second one represents Hanako's card.
+","
+  Print the final scores of Taro and Hanako respectively. Put a single space character between them.
+","
+3
+cat dog
+fish fish
+lion tiger
+","
+1 7
+"
+ITP1_9_D,"
+  Write a program which performs a sequence of commands to a given string $str$. The command is one of:
+
+print a b: print from the a-th character to the b-th character of $str$
+reverse a b: reverse from the a-th character to the b-th character of $str$
+replace a b p: replace from the a-th character to the b-th character of $str$ with p
+print a b: print from the a-th character to the b-th character of $str$print a babreverse a b: reverse from the a-th character to the b-th character of $str$reverse a babreplace a b p: replace from the a-th character to the b-th character of $str$ with preplace a b pabp
+  Note that the indices of $str$ start with 0.
+","
+  In the first line, a string $str$ is given. $str$ consists of lowercase letters. In the second line, the number of commands q is given. In the next q lines, each command is given in the above mentioned format.
+","
+For each print command, print a string in a line.
+","
+abcde
+3
+replace 1 3 xyz
+reverse 0 2
+print 1 4
+","
+xaze
+"
+ITP1_10_A,"
+  Write a program which calculates the distance between two points P1(x1, y1) and P2(x2, y2).
+","
+  Four real numbers x1, y1, x2 and y2 are given in a line.
+","
+  Print the distance in real number. The output should not contain an absolute error greater than 10-4.
+","
+0 0 1 1
+","
+1.41421356
+"
+ITP1_10_B,"
+  For given two sides of a triangle a and b and the angle C between them, calculate the following properties:
+
+S: Area of the triangle
+L: The length of the circumference of the triangle
+h: The height of the triangle with side a as a bottom edge
+S: Area of the triangleSL: The length of the circumference of the triangleLh: The height of the triangle with side a as a bottom edge","
+  The length of a, the length of b and the angle C are given in integers.
+","
+  Print S, L and h in a line respectively. The output should not contain an absolute error greater than 10-4.
+","
+4 3 90
+","
+6.00000000
+12.00000000
+3.00000000
+"
+ITP1_10_C,"
+  You have final scores of an examination for n students. Calculate standard deviation of the scores s1, s2 ... sn.
+ns11s22snn
+The variance α2 is defined by  
+2
+α2  = (∑ni=1(si - m)2)/n
+2ni=1iii2
+  where m is an average of si.
+
+  The standard deviation of the scores is the square root of their variance.
+ ","
+  The input consists of multiple datasets. Each dataset is given in the following format:
+
+n
+s1 s2 ... sn
+ns1s2snn
+  The input ends with single zero for n.
+","
+  For each dataset, print the standard deviation in a line. The output should not contain an absolute error greater than 10-4.
+","
+5
+70 80 100 90 20
+3
+80 80 80
+0
+","
+27.85677655
+0.00000000
+"
+ITP1_10_D,"
+  Your task is to calculate the distance between two $n$ dimensional vectors $x = \{x_1, x_2, ..., x_n\}$ and $y = \{y_1, y_2, ..., y_n\}$.
+
+  The Minkowski's distance defined below is a metric which is a generalization of both the Manhattan distance and the Euclidean distance.
+
+\[
+D_{xy} = (\sum_{i=1}^n |x_i - y_i|^p)^{\frac{1}{p}}
+\]
+
+
+It can be the Manhattan distance 
+
+
+\[
+D_{xy} = |x_1 - y_1| + |x_2 - y_2| + ... + |x_n - y_n|
+\]
+
+
+where $p = 1 $.
+
+
+
+It can be the Euclidean distance
+
+\[
+D_{xy} = \sqrt{(|x_1 - y_1|)^{2} + (|x_2 - y_2|)^{2} + ... + (|x_n - y_n|)^{2}}
+\]
+
+where $p = 2 $.
+
+
+
+Also, it can be the Chebyshev distance
+
+
+\[
+D_{xy} = max_{i=1}^n (|x_i - y_i|)
+\]
+
+
+where $p = \infty$
+
+Write a program which reads two $n$ dimensional vectors $x$ and $y$, and calculates Minkowski's distance where $p = 1, 2, 3, \infty$ respectively.
+","
+  In the first line, an integer $n$ is given. In the second and third line, $x = \{x_1, x_2, ... x_n\}$ and $y = \{y_1, y_2, ... y_n\}$ are given respectively. The elements in $x$ and $y$ are given in integers.
+","
+  Print the distance where $p = 1, 2, 3$ and $\infty$ in a line respectively.
+The output should not contain an absolute error greater than 10-5.
+","
+3
+1 2 3
+2 0 4
+","
+4.000000
+2.449490
+2.154435
+2.000000
+"
+ITP1_11_A,"
+  Write a program to simulate rolling a dice, which can be constructed by the following net.
+
+
+
+
+  As shown in the figures, each face is identified by a different label from 1 to 6.
+
+  Write a program which reads integers assigned to each face identified by the label and a sequence of commands to roll the dice, and prints the integer on the top face. At the initial state, the dice is located as shown in the above figures.
+","
+  In the first line, six integers assigned to faces are given in ascending order of their corresponding labels.
+
+  In the second line, a string which represents a sequence of commands, is given. The command is one of 'E', 'N', 'S' and 'W' representing four directions shown in the above figures.
+","
+  Print the integer which appears on the top face after the simulation.
+","
+1 2 4 8 16 32
+SE
+","
+8
+"
+ITP1_11_B,"
+Construct a dice from a given sequence of integers in the same way as Dice I.
+
+  You are given integers on the top face and the front face after the dice was rolled in the same way as Dice I. Write a program to print an integer on the right side face.
+
+
+","
+ In the first line, six integers assigned to faces are given in ascending order of their corresponding labels.
+In the second line, the number of questions $q$ is given.
+
+  In the following $q$ lines, $q$ questions are given. Each question consists of two integers on the top face and the front face respectively.
+","
+  For each question, print the integer on the right side face.
+","
+1 2 3 4 5 6
+3
+6 5
+1 3
+3 2
+","
+3
+5
+6
+"
+ITP1_11_C,"
+  Write a program which reads the two dices constructed in the same way as Dice I, and determines whether these two dices are identical. You can roll a dice in the same way as Dice I, and if all integers observed from the six directions are the same as that of another dice, these dices can be considered as identical.
+","
+  In the first line, six integers assigned to faces of a dice are given in ascending order of their corresponding labels.
+    In the second line, six integers assigned to faces of another dice are given in ascending order of their corresponding labels.
+","
+  Print ""Yes"" if two dices are identical, otherwise ""No"" in a line.
+","
+1 2 3 4 5 6
+6 2 4 3 5 1
+","
+Yes
+"
+ITP1_11_D,"
+ Write a program which reads $n$ dices constructed in the same way as Dice I, and determines whether they are all different. For the determination, use the same way as Dice III.
+","
+  In the first line, the number of dices $n$ is given. In the following $n$ lines, six integers assigned to the dice faces are given respectively in the same way as Dice III.","
+  Print ""Yes"" if given dices are all different, otherwise ""No"" in a line.
+","
+3
+1 2 3 4 5 6
+6 2 4 3 5 1
+6 5 4 3 2 1
+","
+No
+"

@@ -1,0 +1,448 @@
+[
+    {
+        "problem_id": " ITP1_1_A",
+        "possible_error": [
+            "B",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_1_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_1_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_1_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_2_A",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_2_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_2_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_2_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_3_A",
+        "possible_error": [
+            "B",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_3_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_3_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_3_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_4_A",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_4_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_4_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_4_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_5_A",
+        "possible_error": [
+            "A",
+            "B",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_5_B",
+        "possible_error": [
+            "A",
+            "B",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_5_C",
+        "possible_error": [
+            "A",
+            "B",
+            "E",
+            "F",
+            "G",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_5_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "I",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_6_A",
+        "possible_error": [
+            "A",
+            "B",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_6_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_6_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_6_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_7_A",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_7_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_7_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_7_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_8_A",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_8_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_8_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_8_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_9_A",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_9_B",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_9_C",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    },
+    {
+        "problem_id": " ITP1_9_D",
+        "possible_error": [
+            "A",
+            "B",
+            "C",
+            "D",
+            "E",
+            "F",
+            "G",
+            "H",
+            "J"
+        ]
+    }
+]

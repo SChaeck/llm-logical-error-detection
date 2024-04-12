@@ -1,0 +1,133 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Condition error: Condition errors occur when the condition written in the declaration part of a conditional statement ('if', 'switch', etc.) is not properly written.
+        <Detailed situations>
+            <Error case 1> When an incorrect operator is used in the declaration part of a conditional statement. </Error case 1>
+            <Error case 2> When an incorrect function is used in the declaration part of a conditional statement. </Error case 2>
+            <Error case 3> When an incorrect variable is used in the declaration part of a conditional statement. </Error case 3>
+            <Error case 4> When there are other unidentified or unspecified errors in the declaration part of a conditional statement, beyond the scenarios described in Error cases 1-3. </Error case 4>
+        </Detailed situations>
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program to calculate the sum of all natural numbers from 1 to N.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print the sum of natural numbers from 1 to N.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int N;
+            int sum = 0;
+        
+            cin >> N;
+            
+            for (int i = 1; i < N; ++i) { 
+                sum += i;
+            }
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a for loop to iterate from i = 1 to N-1, adding values to sum. Therefore, the sum of the values from 1 to N-1, not the sum from 1 to N as specified in the [Programming Quiz], is stored in sum. As a result, this is a Loop error due to an incorrect condition in the loop declaration. A Loop error is different from the Condition error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program that takes an integer as input and determines whether it is even or odd.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        If N is even, print "The entered number is even." If N is odd, print "The entered number is odd."
+
+        [Sample Input]:
+        3
+
+        [Sample Output]:
+        The entered number is odd.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int num;
+            
+            cin >> num;
+            
+            if (num / 2 == 0) { 
+                cout << "The entered number is even." << endl;
+            } else {
+                cout << "The entered number is odd." << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code checks if the value of num divided by 2 is 0 within the if statement. However, the intention of the [Programming Quiz] was to discern whether the user input stored in num is even or odd, so it should check if the remainder when divided by 2 is 0. Therefore, it's a Condition error since the condition statement is incorrect. And the Condition error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]: 
+        Write a program that assigns a grade based on the entered score.
+
+        [Input]: 
+        The first line contains the student's score.
+
+        [Output]: 
+        Print the grade based on the entered score. Grades are assigned as follows: 90 and above: A, 80 and above: B, 70 and above: C, 60 and above: D, Below 60: F,
+
+        [Sample Input]:
+        85
+
+        [Sample Output]:
+        Grade: B
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int score;
+
+            cin >> score;
+            
+            switch(score % 10) {
+                case 10:
+                case 9:
+                    cout << "Grade: A" << endl;
+                    break;
+                case 8:
+                    cout << "Grade: B" << endl;
+                    break;
+                case 7:
+                    cout << "Grade: C" << endl;
+                    break;
+                case 6:
+                    cout << "Grade: D" << endl;
+                    break;
+                default:
+                    cout << "Grade: F" << endl;
+                    break;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code attempts to differentiate the user input value stored in the score variable by case using a switch-case statement. However, by setting the condition of the switch statement as 'score % 10', an unintended result is output in the [Programming Quiz]. Therefore, this is a Condition error due to incorrectly writing the condition. And the Condition error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 3>
+</Description and examples of one error among the ten types of logical errors>

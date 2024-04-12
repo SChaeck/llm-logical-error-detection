@@ -1,0 +1,141 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Loop error: Loop errors occur when the declaration part of a loop statement('for', 'while', etc.) is not properly written.
+        <Detailed situations>
+            <Error case 1> When initialization or assignment is incorrect in the declaration part of a loop statement. </Error case 1>
+            <Error case 2> When the condition is wrongly written in the declaration part of a loop statement. </Error case 2>
+            <Error case 3> When the increment or decrement expression is incorrect in the declaration part of a loop statement. </Error case 3>
+            <Error case 4> When an infinite loop occurs due to cases 1-3 (However, an infinite loop due to the absence of a necessary break is a Branching error). </Error case 4>
+            <Error case 5> When an Off by 1 problem occurs due to cases 1-3. </Error case 5>
+            <Error case 6> When there are other unidentified or unspecified errors in the declaration or operation of a loop statement, beyond the scenarios described in Error cases 1-5. </Error case 6>
+        </Detailed situations>    
+    </Description>
+    <Example 1>
+        [Programming Quiz]:
+        Write a program that takes an array of integers and calculates the sum of all elements.
+
+        [Input]:
+        The first line contains an integer N, representing the size of the array. The second line contains N space-separated integers, representing the elements of the array. 
+
+        [Output]: 
+        Print the sum of all elements in the array. 
+
+        [Sample Input]:
+        6
+        3 1 6 8 7 2
+
+        [Sample Output]:
+        27
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+        int main() {
+            int N;
+            
+            cin >> N;
+            
+            int arr[N];
+            int sum = 0;
+
+            for(int i = 1; i <= N; ++i) {
+                cin >> arr[i]; 
+                sum += arr[i];
+            }
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code stores the user's input value in the array arr and then adds it to the variable sum. However, when implementing the algorithm, if the variable i of the for loop is the value of N, it will refer to the memory allocated to the array arr, causing an error. At this point, since the loop iterates normally n times, using i-1 as the array index can resolve the error. Therefore, this is an Array/String error and is different from the Loop error described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program to calculate the sum of all natural numbers from 1 to N.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print the sum of natural numbers from 1 to N.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int N;
+            int i = 1;
+            int sum = 0;
+        
+            cin >> N;
+            
+            while (i < N) {
+                sum += i
+                i++
+            }
+            
+            cout << sum << endl;
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a while loop to iterate from i = 1 to N-1, adding values to sum. Therefore, the sum of the values from 1 to N-1, not the sum from 1 to N as specified in the [Programming Quiz], is stored in sum. As a result, this is a Loop error due to incorrect use of the loop. And the Loop error is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]:
+        Write a program to determine if a given number is a prime number.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        Print whether N is a prime number or not.
+
+        [Sample Input]:
+        17
+
+        [Sample Output]:
+        prime number
+
+        [Submission code]: 
+        #include <iostream>
+        #include <cmath> 
+        using namespace std;
+
+        int main() {
+            int N;
+            bool isPrime = true;
+
+            cin >> N;
+
+            if (N == 1) {
+                isPrime = false;
+            } else {
+                for (int i = 2; i < sqrt(N); ++i) {
+                    if (N % i == 0) {
+                        isPrime = false;
+                        break;
+                    }
+                }
+            }
+
+            if (isPrime) {
+                cout << "prime number" << endl;
+            } else {
+                cout << "not a prime number" << endl;
+            }
+
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a for loop to check whether the user input value stored in N is a prime number or not. However, because i only takes values from 2 to sqrt(N)-1, it does not check whether N is divisible at i = sqrt(N). Therefore, when there is a prime number that is divisible at sqrt(N), it does not work as intended in the [Programming Quiz]. Therefore, it is a Loop error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 3>
+</Description and examples of one error among the ten types of logical errors>

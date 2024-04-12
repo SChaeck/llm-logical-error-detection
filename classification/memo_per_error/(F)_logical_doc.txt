@@ -1,0 +1,148 @@
+<Description and examples of one error among the ten types of logical errors>
+    <Description>
+        Branching error: Branching errors occur when the branching in the source code is not appropriate. However, the application of errors is refrained for the content written in the declaration part of the conditional statement and the declaration part of the loop statement('for', 'while', etc.).
+        <Detailed situations>
+            <Error case 1> When a conditional statement that should be written as if-else if-else is written as if-if-if, leading to incorrect behavior. </Error case 1>
+            <Error case 2> When incorrect behavior occurs in a switch-case statement because a break is not written inside a case or default is not used. </Error case 2>
+            <Error case 3> When incorrect behavior occurs in a loop because break or continue is not used when needed. </Error case 3>
+            <Error case 4> When the program does not terminate when it should. </Error case 4>
+            <Error case 5> When there are other unidentified or unspecified errors in the control flow of the program, beyond the scenarios described in Error cases 1-4. </Error case 5>
+        </Detailed situations>
+    </Description>
+    <Example 1>
+        [Programming Quiz]: 
+        Write a program that takes an integer as input and determines whether it is even or odd.
+
+        [Input]: 
+        The first line contains an integer N.
+
+        [Output]: 
+        If N is even, print "The entered number is even." If N is odd, print "The entered number is odd."
+
+        [Sample Input]:
+        3
+
+        [Sample Output]:
+        The entered number is odd.
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int num;
+            
+            cin >> num;
+            
+            if (num / 2 == 0) { 
+                cout << "The entered number is even." << endl;
+            } else {
+                cout << "The entered number is odd." << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code checks within the if statement if the value of num divided by 2 is 0 to determine whether the user input is even or odd. However, for the program to function correctly, it should verify whether the 'remainder' after division by 2 is 0. Therefore, an error has occurred due to the incorrect use of the condition statement, and since it is not a case of improper branching with if-if, it is a 'Condition error'. A 'Condition error' is different from the 'Branching error' described in <Description and examples of one error among the ten types of logical errors/>. "No"
+    </Example 1>
+    <Example 2>
+        [Programming Quiz]: 
+        Write a program that assigns a grade based on the entered score.
+
+        [Input]: 
+        The first line contains the student's score.
+
+        [Output]: 
+        Print the grade based on the entered score. Grades are assigned as follows: 90 and above: A, 80 and above: B, 70 and above: C, 60 and above: D, Below 60: F,
+
+        [Sample Input]:
+        85
+
+        [Sample Output]:
+        Grade: B
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int score;
+
+            cin >> score;
+            
+            switch(score / 10) {
+                case 10:
+                case 9:
+                    cout << "Grade: A" << endl;
+                    break;
+                case 8:
+                    cout << "Grade: B" << endl;
+                    break;
+                case 7:
+                    cout << "Grade: C" << endl;
+                    break;
+                case 6:
+                    cout << "Grade: D" << endl;
+                default:
+                    cout << "Grade: F" << endl;
+                    break;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses a switch-case statement to differentiate the user input value stored in score variable by case. However, because a break statement is not used within case 6, an unintended result is output in the [Programming Quiz]. Therefore, it is a Branching error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 2>
+    <Example 3>
+        [Programming Quiz]: 
+        Write a program that assigns a grade based on the entered score.
+
+        [Input]: 
+        The first line contains the student's score.
+
+        [Output]: 
+        Print the grade based on the entered score. Grades are assigned as follows: 90 and above: A, 80 and above: B, 70 and above: C, 60 and above: D, Below 60: F,
+
+        [Sample Input]:
+        85
+
+        [Sample Output]:
+        Grade: B
+
+        [Submission code]: 
+        #include <iostream>
+        using namespace std;
+
+        int main() {
+            int score;
+
+            cin >> score;
+            
+            if (score/10 >= 9) {  
+                cout << "Grade: A" << endl;
+            }
+            if (score/10 >= 8) { 
+                cout << "Grade: B" << endl;
+            }
+            if (score/10 >= 7) {
+                cout << "Grade: C" << endl;
+            }
+            if (score/10 >= 6) {
+                cout << "Grade: D" << endl;
+            }
+            else {
+                cout << "Grade: F" << endl;
+            }
+            
+            return 0;
+        }
+
+        Q: Considering the [Programming Quiz], [Input], [Output], [Sample Input], [Sample Output], and [Submission code], could the error described in <Description and examples of one error among the ten types of logical errors/> occur in the [Submission code]?       
+        First, document the reason for your consideration, then conclude the sentence with 'Yes' or 'No'. Should the logical error be correct but fail to align with the description in <Description and examples of one error among the ten types of logical errors/>, the response should be 'No'.
+        A: This code uses an if statement to differentiate the user input value stored in the score variable. However, because it uses multiple if statements to divide branches instead of 'if'-'else if'-'else', an unintended result is output in the [Programming Quiz]. Therefore, it is a Branching error and is the error described in <Description and examples of one error among the ten types of logical errors/>. "Yes"
+    </Example 3>
+</Description and examples of one error among the ten types of logical errors>
